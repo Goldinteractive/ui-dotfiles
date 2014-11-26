@@ -39,3 +39,6 @@ node_modules
 # ignore the distribution folder
 dist
 .tmp
+
+# Ignore the bower components
+bower_components
