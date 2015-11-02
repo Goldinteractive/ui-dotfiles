@@ -1,6 +1,11 @@
 sass:
 	@ sass demo.scss:demo.css --style=compressed --sourcemap=none
 
-scss: sass
+watch-sass:
+	@ sass demo.scss:demo.css --style=compressed --sourcemap=none --watch
 
-.PHONY: sass scss
+# alias
+scss: sass
+watch-scss: watch-sass
+
+.PHONY: sass scss watch-sass watch-scss
